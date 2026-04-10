@@ -6,9 +6,10 @@ class MyProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Portfolio'),
-          centerTitle: true,
-      backgroundColor: Colors.blue,
+      appBar: AppBar(
+        title: Text('Portfolio'),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -49,11 +50,10 @@ class MyProfile extends StatelessWidget {
                 SizedBox(height: 12),
 
                 /// Name
-                Text(
+                const Text(
                   'Mon Mohan',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-
                 SizedBox(height: 4),
 
                 /// Profession
@@ -67,11 +67,32 @@ class MyProfile extends StatelessWidget {
                 /// Description
                 Text(
                   'Passionate Flutter Developer building cross-platform mobile apps with clean code, responsive UI, and smooth performance.',
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 14, color: Colors.grey[700]),
                 ),
 
                 SizedBox(height: 20),
+
+                Row(
+                  children: const [
+                    Icon(Icons.email, color: Colors.red),
+                    SizedBox(width: 8),
+                    Text(
+                      'monmohanhalder@gmail.com',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ],
+                ),
+
+                /// Contact Information
+                Row(
+                  children: const [
+                    Icon(Icons.phone, color: Colors.green),
+                    SizedBox(width: 8),
+                    Text('(+65) 82535342', style: TextStyle(fontSize: 16)),
+                  ],
+                ),
+                SizedBox(height: 10),
 
                 /// Product Card
                 Card(
