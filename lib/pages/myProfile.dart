@@ -73,6 +73,7 @@ class MyProfile extends StatelessWidget {
 
                 SizedBox(height: 20),
 
+                /// Contact Information
                 Row(
                   children: const [
                     Icon(Icons.email, color: Colors.red),
@@ -84,7 +85,6 @@ class MyProfile extends StatelessWidget {
                   ],
                 ),
 
-                /// Contact Information
                 Row(
                   children: const [
                     Icon(Icons.phone, color: Colors.green),
@@ -92,7 +92,12 @@ class MyProfile extends StatelessWidget {
                     Text('(+65) 82535342', style: TextStyle(fontSize: 16)),
                   ],
                 ),
-                SizedBox(height: 10),
+                Divider(height: 20),
+                Text(
+                  'Card Section',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                Divider(height: 20),
 
                 /// Product Card
                 Card(
